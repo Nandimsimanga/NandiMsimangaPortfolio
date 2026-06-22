@@ -6,9 +6,10 @@ export const links = {
 
 export const aboutMe = [
   'I am a BComp Application Development graduate with distinction, passionate about building software that solves practical problems through thoughtful engineering and modern technology.',
-  'My academic foundation spans software development, databases, cloud computing, security, mobile development, and full-stack engineering. Through academic projects and hackathon participation, I have developed experience building AI-powered applications using ASP.NET Core, Firebase, Firestore, Kotlin, and .NET MAUI.',
   'Beyond software development, I have spent several years managing guest house operations, where I developed leadership, customer engagement, procurement, and operational management skills.',
   'I am particularly interested in Cloud Engineering, Artificial Intelligence, Platform Engineering, and building reliable systems that create meaningful value for people.',
+  'My academic foundation spans software development, databases, cloud computing, security, mobile development, and full-stack engineering. Through academic projects and hackathon participation, I have developed experience building AI-powered applications using ASP.NET Core, Firebase, Firestore, Kotlin, and .NET MAUI.',
+
 ]
 
 export const highlights = [

@@ -29,11 +29,11 @@ function App() {
         </div>
       </nav>
 
-      <section id="top" className="hero">
+      <section id="top" className="hero section--light">
         <div className="hero-eyebrow">
           <span className="hero-dot" />
           <span>
-            Software Developer · BComp Graduate with Distinction · Honours Student
+            Software Developer · BComp Graduate with Distinction
           </span>
         </div>
 
@@ -63,10 +63,10 @@ function App() {
           </div>
         </div>
 
-        <span className="hero-scroll">↓ Scroll</span>
+        <span className="hero-scroll">↓ Scroll for more info</span>
       </section>
 
-      <section id="about" className="about">
+      <section id="about" className="about section--dark">
         <div className="about-grid">
           <div data-reveal className="section-label">
             (01) — About
@@ -91,10 +91,10 @@ function App() {
         </div>
       </section>
 
-      <section id="skills" className="skills">
+      <section id="skills" className="skills section--light">
         <div data-reveal className="skills-header">
           <h2 className="skills-title">Skills</h2>
-          <span className="section-label section-label--light">
+          <span className="section-label">
             (02) — Technologies
           </span>
         </div>
@@ -117,10 +117,10 @@ function App() {
         </div>
       </section>
 
-      <section id="highlights" className="highlights">
+      <section id="highlights" className="highlights section--dark">
         <div data-reveal className="section-header">
           <h2 className="section-title">Highlights</h2>
-          <span className="section-label">Key credentials</span>
+          <span className="section-label">(03) — Key credentials</span>
         </div>
         <div className="highlights-grid">
           {highlights.map((item) => (
@@ -132,12 +132,10 @@ function App() {
         </div>
       </section>
 
-      <section id="projects" className="projects">
+      <section id="projects" className="projects section--light">
         <div data-reveal className="section-header">
           <h2 className="section-title">Featured projects</h2>
-          <span className="section-label section-label--light">
-            (03) — Selected work
-          </span>
+          <span className="section-label">(04) — Selected work</span>
         </div>
         <div className="projects-list">
           {projects.map((project, index) => (
@@ -181,10 +179,10 @@ function App() {
 
     
 
-      <section id="academics" className="academics">
+      <section id="academics" className="academics section--dark">
         <div data-reveal className="section-header">
           <h2 className="section-title">Academic achievements</h2>
-          <span className="section-label">Module results</span>
+          <span className="section-label">(05) — Module results</span>
         </div>
         <div className="academics-grid">
           {academicResults.map((result) => (
@@ -199,9 +197,9 @@ function App() {
         </div>
       </section>
 
-      <section id="leadership" className="leadership">
+      <section id="leadership" className="leadership section--light">
         <div className="leadership-grid">
-          <div data-reveal className="section-label section-label--light">
+          <div data-reveal className="section-label">
             (06) — Leadership
           </div>
           <div>
@@ -219,10 +217,10 @@ function App() {
         </div>
       </section>
 
-      <section id="career" className="career">
+      <section id="career" className="career section--dark">
         <div data-reveal className="section-header">
           <h2 className="section-title">Career interests</h2>
-          <span className="section-label">Open to opportunities</span>
+          <span className="section-label">(07) — Open to opportunities</span>
         </div>
         <p data-reveal className="career-intro">
           I am actively seeking roles where I can grow as an engineer while
@@ -237,8 +235,8 @@ function App() {
         </div>
       </section>
 
-      <section id="contact" className="contact">
-        <span data-reveal className="section-label section-label--light">
+      <section id="contact" className="contact section--light">
+        <span data-reveal className="section-label">
           (08) — Contact
         </span>
         <a data-reveal href={links.email} className="contact-email">
