@@ -1,4 +1,5 @@
 export const links = {
+  github: 'https://github.com/Nandimsimanga',
   linkedin: 'https://www.linkedin.com/in/nandi-msimanga-79310a293/',
   email: 'mailto:nandi.msimanga23@gmail.com',
   emailDisplay: 'nandi.msimanga23@gmail.com',
@@ -95,6 +96,7 @@ export const projects = [
     tech: ['ASP.NET Core', 'Firestore', 'Firebase', 'AI APIs'],
     achievement: '3rd Place at the 2025 Varsity College AI Hackathon',
     featured: true,
+    url: null,
   },
   {
     id: 'budget-tracker',
@@ -111,6 +113,7 @@ export const projects = [
     tech: ['Kotlin', 'Android', 'RoomDB'],
     achievement: null,
     featured: false,
+    url: 'https://nandimsimanga.github.io/AIBudgetingApp/',
   },
   {
     id: 'recipe-planner',
@@ -126,6 +129,7 @@ export const projects = [
     tech: ['.NET MAUI'],
     achievement: null,
     featured: false,
+    url: null,
   },
 ]
 

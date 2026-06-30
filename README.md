@@ -1,16 +1,70 @@
-# React + Vite
+# Nandi Msimanga — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio site built with React and Vite. Content (projects, skills, contact links, and more) lives in `src/data/content.js`.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- [Node.js](https://nodejs.org/) 20 or later (recommended)
+- npm (included with Node.js)
 
-## React Compiler
+## Getting started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Clone the repository, then install dependencies:
 
-## Expanding the ESLint configuration
+```bash
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Run locally (development)
+
+Start the dev server with hot reload:
+
+```bash
+npm run dev
+```
+
+Vite prints a local URL in the terminal (usually `http://localhost:5173`). Open that address in your browser.
+
+## Build for production
+
+Create an optimized production build in the `dist/` folder:
+
+```bash
+npm run build
+```
+
+## Preview the production build
+
+After building, serve the `dist/` output locally to test the production bundle:
+
+```bash
+npm run preview
+```
+
+## Lint
+
+Check the codebase with ESLint:
+
+```bash
+npm run lint
+```
+
+## Project structure
+
+```
+src/
+  App.jsx          # Page layout and sections
+  App.css          # Styles
+  data/content.js  # Portfolio content (edit this to update copy & links)
+  hooks/           # Reusable React hooks
+```
+
+## Deployment
+
+Pushes to the `main` branch deploy automatically to GitHub Pages via `.github/workflows/deploy.yml`. The workflow builds with:
+
+```bash
+VITE_BASE_PATH=/NandiMsimangaPortfolio/ npm run build
+```
+
+For local development, no base path is needed. For a custom deploy path, set `VITE_BASE_PATH` when building.

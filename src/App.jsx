@@ -53,6 +53,24 @@ function App() {
               <span className="hero-tag hero-tag--filled">Cloud &amp; AI</span>
               <span className="hero-tag">Open to graduate roles</span>
             </div>
+            <div className="hero-links">
+              <a
+                href={links.github}
+                className="hero-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub ↗
+              </a>
+              <a
+                href={links.linkedin}
+                className="hero-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn ↗
+              </a>
+            </div>
           </div>
           <div className="hero-portrait">
             <img
@@ -165,12 +183,24 @@ function App() {
                   ))}
                 </ul>
               </div>
-              <div className="project-tech">
-                {project.tech.map((tech) => (
-                  <span key={tech} className="project-tech-tag">
-                    {tech}
-                  </span>
-                ))}
+              <div className="project-footer">
+                <div className="project-tech">
+                  {project.tech.map((tech) => (
+                    <span key={tech} className="project-tech-tag">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                {project.url && (
+                  <a
+                    href={project.url}
+                    className="project-link"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View project ↗
+                  </a>
+                )}
               </div>
             </article>
           ))}
